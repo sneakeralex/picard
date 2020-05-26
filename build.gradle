@@ -65,7 +65,7 @@ def ensureBuildPrerequisites(rbuildPrerequisitesMessage) {
 
 ensureBuildPrerequisites(buildPrerequisitesMessage)
 
-final htsjdkVersion = System.getProperty('htsjdk.version', '2.21.1-18-g8a215b4-SNAPSHOT')
+final htsjdkVersion = System.getProperty('htsjdk.version', '2.21.1-23-g5ac3a7b-SNAPSHOT')
 final googleNio = 'com.google.cloud:google-cloud-nio:0.107.0-alpha:shaded'
 
 // Get the jdk files we need to run javaDoc. We need to use these during compile, testCompile,
