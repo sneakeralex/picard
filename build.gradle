@@ -92,7 +92,6 @@ dependencies {
     compile 'commons-lang:commons-lang:2.6'
     compile 'com.github.samtools:htsjdk:' + htsjdkVersion
     compile 'org.broadinstitute:barclay:2.0.0'
-    compile 'org.mapdb:mapdb:3.0.4'
     compileOnly(googleNio) {
         transitive = false
     }
@@ -438,9 +437,9 @@ gitPublish {
     repoUri = 'git@github.com:broadinstitute/picard.git'
     branch = 'gh-pages'
     preserve { include '**/*' }
-    contents {
-        from('build/docs/html') {
-            into 'newdocs'
-        }
+    contents { 
+        from('build/docs/html') { 
+            into 'newdocs' 
+        } 
     }
 }
